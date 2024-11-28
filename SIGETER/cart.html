@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+</head>
+<body>
+
+<header>
+  <div class="logo">SIGETER</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="product.html">Products</a>
+    <a href="testimoni.html">Testimonials</a>
+  </nav>
+</header>
+
+<section class="cart">
+  <h1>Your Shopping Cart</h1>
+  <div class="cart-items" id="cart-items">
+    <!-- Example Cart Items -->
+    <div class="cart-item">
+      <img src="images/product1.jpg" alt="Product 1" width="100">
+      <div class="item-details">
+        <h3>Product 1</h3>
+        <p class="price" data-price="19.99">$19.99</p>
+        <p>Quantity: <input type="number" value="1" min="1" class="quantity"></p>
+      </div>
+      <button class="remove-btn">Remove</button>
+    </div>
+
+    <div class="cart-item">
+      <img src="images/product2.jpg" alt="Product 2" width="100">
+      <div class="item-details">
+        <h3>Product 2</h3>
+        <p class="price" data-price="29.99">$29.99</p>
+        <p>Quantity: <input type="number" value="1" min="1" class="quantity"></p>
+      </div>
+      <button class="remove-btn">Remove</button>
+    </div>
+  </div>
+
+  <div class="cart-summary">
+    <h2>Cart Summary</h2>
+    <p>Total: $<span id="total">49.98</span></p>
+    <button class="btn-primary">Proceed to Checkout</button>
+  </div>
+</section>
+
+<script src="cart.js"></script> <!-- Link to external JS file -->
+
+<footer>
+  <div class="footer-content">
+    <ul class="footer-links">
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="#">Help</a></li>
+    </ul>
+  </div>
+  <div class="copyright">
+    &copy; 2024 Company Kel-CLARA. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
