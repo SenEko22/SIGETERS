@@ -12,7 +12,7 @@
 
   header {
     background-color: #4b0082; /* Purple shade */
-    padding: 10px 20px;
+    padding: 20px 30px; 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -381,4 +381,166 @@
 }
 input[type="number"] {
   width: 50px; 
+}
+
+/* style buat profile */
+
+.profile-section {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.profile-info {
+  display: flex;
+  gap: 20px;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 3px solid #ddd;
+}
+
+.profile-details h1 {
+  font-size: 2em;
+  margin: 0;
+  color: #333;
+}
+
+.profile-details .email,
+.profile-details .phone,
+.profile-details .address {
+  font-size: 1.1em;
+  color: #777;
+}
+
+.profile-details .btn-edit {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.profile-details .btn-edit:hover {
+  background-color: #45a049;
+}
+
+.account-settings h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.account-settings ul {
+  list-style: none;
+  padding: 0;
+}
+
+.account-settings li {
+  margin: 15px 0;
+}
+
+.account-settings .btn-settings {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  display: block;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.account-settings .btn-settings:hover {
+  background-color: #ddd;
+}
+
+.account-settings .btn-settings.delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.account-settings .btn-settings.delete:hover {
+  background-color: #c0392b;
+}
+
+/* Edit profil */
+.edit-profile-section {
+  padding: 40px;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.edit-profile-section h1 {
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.edit-profile-form .form-group {
+  margin-bottom: 20px;
+}
+
+.edit-profile-form .form-group label {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.edit-profile-form .form-group input,
+.edit-profile-form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.edit-profile-form .form-group input:focus,
+.edit-profile-form .form-group textarea:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.edit-profile-form .form-group textarea {
+  resize: vertical;
+}
+
+.edit-profile-form .btn-primary {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.edit-profile-form .btn-primary:hover {
+  background-color: #45a049;
 }
