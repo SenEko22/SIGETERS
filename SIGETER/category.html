@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Profile</title>
+  <title>Event Categories</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,38 +24,44 @@
     <a href="signin.html">
         <img src="icons/user-icon.png" alt="User Icon">
     </a>
-    <a href="#">
+    <a href="profile.html">
         <img src="icons/settings-icon.png" alt="Settings Icon">
     </a>
   </div>
-  <!-- Logout Button in Header -->
-  <div class="logout-header">
-    <a href="logout.html" class="btn-logout">Logout</a>
-  </div>
 </header>
 
-<section class="profile-section">
-  <div class="profile-header">
-    <div class="profile-info">
-      <div class="profile-picture">
-        <img src="icons/profile.png" alt="Profile Picture">
-      </div>
-      <div class="profile-details">
-        <h1>Your Name</h1>
-        <p class="email">@example.com</p>
-        <p class="phone">+123 456 7890</p>
-        <p class="address">Address</p>
-        <a href="edit-profile.html" class="btn-edit">Edit Profile</a>
-      </div>
-    </div>
-  </div>
+<section class="categories-section">
+  <h1>Explore Event Categories</h1>
+  <div class="category-container">
 
-  <div class="account-settings">
-    <h2>Account Settings</h2>
-    <ul>
-      <li><a href="change-password.html" class="btn-settings">Change Password</a></li>
-      <li><a href="delete-account.html" class="btn-settings delete">Delete Account</a></li>
-    </ul>
+    <div class="category-item">
+      <img src="pict/concert.jpg" alt="Concerts">
+      <h2>Concerts</h2>
+      <p>Find upcoming music events and live performances.</p>
+      <a href="concerts.html" class="btn-category">Explore</a>
+    </div>
+
+    <div class="category-item">
+      <img src="pict/sports.jpg" alt="Sports">
+      <h2>Sports</h2>
+      <p>Discover live sports events and competitions near you.</p>
+      <a href="sports.html" class="btn-category">Explore</a>
+    </div>
+
+    <div class="category-item">
+      <img src="pict/conference.jpg" alt="Conferences">
+      <h2>Conferences</h2>
+      <p>Attend professional conferences and seminars.</p>
+      <a href="conferences.html" class="btn-category">Explore</a>
+    </div>
+
+    <div class="category-item">
+      <img src="pict/workshop.jpg" alt="Workshops">
+      <h2>Workshops</h2>
+      <p>Participate in skill-building workshops.</p>
+      <a href="workshops.html" class="btn-category">Explore</a>
+    </div>
+
   </div>
 </section>
 
@@ -68,7 +74,7 @@
     </ul>
     <div class="social-icons">
       <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
-      <a href="#"><img src="icons/whatsapp.png" alt="Whatsapp"></a>
+      <a href="#"><img src="icons/whatsapp.png" alt="WhatsApp"></a>
       <a href="#"><img src="icons/instagram.png" alt="Instagram"></a>
     </div>
   </div>
