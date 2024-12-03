@@ -482,6 +482,43 @@ input[type="number"] {
   background-color: #c0392b;
 }
 
+/* Sidebar initial state: hidden */
+.sidebar {
+  position: fixed;
+  left: -250px; /* Start off-screen */
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  transition: left 0.3s ease;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+/* Sidebar links */
+.sidebar nav a {
+  display: block;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+
+.sidebar nav a:hover {
+  background-color: #575757;
+}
+
+/* Show the sidebar when the logo is hovered */
+header:hover .sidebar {
+  left: 0;
+}
+
+/* Logo styling (optional) */
+.logo {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
 /* Edit profil */
 .edit-profile-section {
   padding: 40px;

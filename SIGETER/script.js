@@ -92,3 +92,16 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   }
 });
+
+const logo = document.getElementById('logo');
+const sidebar = document.getElementById('sidebar');
+
+logo.addEventListener('mouseenter', () => {
+  sidebar.style.left = '0';
+});
+
+logo.addEventListener('mouseleave', () => {
+  setTimeout(() => {
+    sidebar.style.left = '-250px';
+  }, 300); // Delay to avoid flickering when moving the cursor
+});
