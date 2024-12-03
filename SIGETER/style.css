@@ -492,10 +492,8 @@ input[type="number"] {
   height: 100vh;
   background-color: grey;
   transition: left 0.3s ease;
-  display: ruby;
   padding: 20px 20px; /* Adjust for header height */
 }
-
 .sidebar nav a {
   display: contents;
   color: white;
