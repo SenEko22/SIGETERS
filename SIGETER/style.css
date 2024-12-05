@@ -484,38 +484,6 @@ input[type="number"] {
   background-color: #c0392b;
 }
 
-/* Sidebar */
-.sidebar {
-  position: fixed;
-  left: none;
-  width: 200px;
-  height: 100vh;
-  background-color: grey;
-  transition: left 0.3s ease;
-  padding: 20px 20px; /* Adjust for header height */
-}
-.sidebar nav a {
-  display: contents;
-  color: white;
-  gap: 10px;
-  letter-spacing: -0.02em;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  padding: 5px 10px;
-  text-decoration: none;
-  font-size: 18px;
-
-}
-
-.sidebar nav a:hover {
-  background-color: #575757;
-}
-
-/* Trigger sidebar when logo is hovered */
-.header-logo:hover + .sidebar {
-  left: 0;
-}
-
 /* Adjusting the header */
 
 
