@@ -6,20 +6,55 @@
 
   body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-image: url(pict/concert.jpg);
+    background-size: 140%;
     color: #333;
   }
+
+  /* Sidenav*/
+  .sidenav_inx {
+    width: 130px;
+    position: left, ;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
+
+  .sidenav_inx a {
+    margin-inline: 10px 0px;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color:#4b0082;
+    display: block;
+    background-color: #D4BEE4;
+  }
+
+  .sidenav_inx a:hover {
+    color: white;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav_inx {padding-top: 15px;}
+    .sidenav_inx a {font-size: 18px;}
+  }
   
+  /* Header */
   header {
-    background-color: #4b0082; /* Purple shade */
+    background-color: #4b0082; 
     padding: 20px 30px; 
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    width: 100% ;
   }
 
   header .logo {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     color: white;
   }
@@ -27,12 +62,15 @@
   nav {
     display: flex;
     gap: 10px;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
   }
 
   nav a {
     color: white;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 17px;
     font-weight: bold;
     border: red;
   }
@@ -47,52 +85,7 @@
     height: 20px;
   }
 
-  .container {
-    max-width: 500px;
-    margin: 50px auto;
-    background-color: #d9caff; /* Light purple shade */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .container h1 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #4b0082; /* Darker purple for text */
-  }
-
-  .container p {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #555;
-  }
-
-  .form-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    border: 1px solid #4b0082; /* Purple border */
-    border-radius: 5px;
-    background: white;
-    padding: 5px;
-  }
-
-  .form-group input {
-    flex: 1;
-    border: none;
-    outline: none;
-    padding: 10px;
-    font-size: 1rem;
-  }
-
-  .form-group img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-  }
-
+  
   button {
     width: 100%;
     background-color: #4b0082; /* Purple button */
@@ -484,9 +477,6 @@ input[type="number"] {
   background-color: #c0392b;
 }
 
-/* Adjusting the header */
-
-
 /* Edit profil */
 .edit-profile-section {
   padding: 40px;
@@ -601,4 +591,30 @@ input[type="number"] {
 
 .category-item:hover {
   transform: translateY(-5px);
+}
+
+/* logout */
+
+.logout-container {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+h1 {
+  color: #333;
+}
+p {
+  margin: 20px 0;
+  color: #555;
+}
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
 }
